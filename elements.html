@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Details | JOC</title>
+  <meta name="description" content="Portfolio details for JOC architectural photography.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/squeeze-carousel.js" defer></script>
+  <script src="js/site-chrome.js" defer></script>
+</head>
+<body class="about-page">
+  <header class="site-header">
+    <div class="header-bar">
+      <div class="brand-block">
+        <a href="index.html" class="brand-mark">JOC</a>
+        <span>Architectural Photography</span>
+      </div>
+      <nav class="site-navigation" aria-label="Main navigation">
+        <button class="menu-toggle" type="button" aria-expanded="false">Menu</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="southampton.html">Southampton</a></li>
+          <li><a href="daniels-devlin-house.html">Daniels/Devlin House</a></li>
+          <li><a href="walnut-creek-cottage.html">Walnut Creek Cottage</a></li>
+          <li><a href="aidells-oakes-healdsburg-house.html">Aidells/Oakes Healdsburg House</a></li>
+          <li><a href="atherton-poolhouse.html">Atherton Poolhouse</a></li>
+          <li><a href="art-and-architecture.html">Art &amp; Architecture</a></li>
+          <li><a href="photography-of-artwork.html">Photography of Artwork</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero" aria-label="Portfolio detail">
+      <div class="page-hero-inner">
+        <p>Portfolio</p>
+        <h1>Southampton</h1>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="about-layout">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" alt="Southampton home exterior">
+        </div>
+        <div class="about-copy">
+          <h2>Architecture shaped by light, landscape, and calm.</h2>
+          <p>Southampton presents a refined balance of natural materials, warm stone, and quiet modern lines. The project was photographed with special attention to morning light, garden connections, and the fluid relationship between indoor and outdoor living.</p>
+          <p>Each frame was composed to emphasize texture and atmosphere while preserving the clarity of the architectural language. The result is a portfolio set that feels grounded, elegant, and deeply immersive.</p>
+          <p>These images are intended to read as both documentation and atmosphere — presenting the home as a lived-in, highly considered environment rather than a simple facade study.</p>
+        </div>
+      </div>
+
+      <div class="stats-grid" aria-label="Project statistics">
+        <div class="stat-box"><strong>4</strong><span>Rooms</span></div>
+        <div class="stat-box"><strong>18</strong><span>Shots</span></div>
+        <div class="stat-box"><strong>2</strong><span>Locations</span></div>
+        <div class="stat-box"><strong>1</strong><span>Story</span></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="socials" aria-label="Social links">
+    <a href="https://www.instagram.com/jeannieoconnorphotography/" aria-label="Instagram" target="_blank" rel="noreferrer">IG</a>
+    <a href="https://www.facebook.com/jocarchphoto" aria-label="Facebook" target="_blank" rel="noreferrer">FB</a>
+  </div>
+
+  <script>
+    const nav = document.querySelector('.site-navigation');
+    const toggle = document.querySelector('.menu-toggle');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+  </script>
+</body>
+</html>

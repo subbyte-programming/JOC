@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Southampton | JOC</title>
+  <meta name="description" content="Southampton residential architecture project photographed by JOC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/squeeze-carousel.js" defer></script>
+  <script src="js/site-chrome.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-bar">
+      <div class="brand-block">
+        <a href="index.html" class="brand-mark">JOC</a>
+        <span>Architectural Photography</span>
+      </div>
+      <nav class="site-navigation" aria-label="Main navigation">
+        <button class="menu-toggle" type="button" aria-expanded="false">Menu</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="southampton.html">Southampton</a></li>
+          <li><a href="daniels-devlin-house.html">Daniels/Devlin House</a></li>
+          <li><a href="walnut-creek-cottage.html">Walnut Creek Cottage</a></li>
+          <li><a href="aidells-oakes-healdsburg-house.html">Aidells/Oakes Healdsburg House</a></li>
+          <li><a href="atherton-poolhouse.html">Atherton Poolhouse</a></li>
+          <li><a href="art-and-architecture.html">Art &amp; Architecture</a></li>
+          <li><a href="photography-of-artwork.html">Photography of Artwork</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell project-page-shell">
+    <section class="project-hero" style="background-image: linear-gradient(rgba(17,17,17,0.35), rgba(17,17,17,0.76)), url('https://images.squarespace-cdn.com/content/v1/5bd8fca47c9327bef923664d/1551234967423-XV7S3YECQQKLGY9NT0VP/_MG_6039.jpg');" aria-label="Southampton project cover">
+      <div class="page-hero-inner">
+        <p>Featured project</p>
+        <h1>Southampton</h1>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="project-intro">
+        <div class="project-main-image">
+          <img src="https://images.squarespace-cdn.com/content/v1/5bd8fca47c9327bef923664d/1551234967423-XV7S3YECQQKLGY9NT0VP/_MG_6039.jpg" alt="Southampton residence photography">
+        </div>
+        <div class="project-copy">
+          <p class="eyebrow dark">Architecture / Residence</p>
+          <h2>Calm, gallery-like interiors shaped by warm natural light.</h2>
+          <p>Southampton was photographed to emphasize the relationship between architecture and landscape, with a soft editorial rhythm that lets the room breathe. The emphasis is on proportion, material nuance, and the kind of light that makes a modern home feel intimate and timeless.</p>
+          <p>Every frame was composed to preserve the sense of openness while still revealing the tactile qualities of stone, timber, and glass. The result feels elegantly resolved and deeply grounded in place.</p>
+        </div>
+      </div>
+
+      <div class="project-specs" aria-label="Project details">
+        <div class="project-spec"><span>Location</span><strong>Southampton</strong></div>
+        <div class="project-spec"><span>Type</span><strong>Coastal Residence</strong></div>
+        <div class="project-spec"><span>Scope</span><strong>Editorial Portraits</strong></div>
+        <div class="project-spec"><span>Approach</span><strong>Natural Light</strong></div>
+      </div>
+
+      <div class="project-gallery">
+        <figure><img src="https://images.squarespace-cdn.com/content/v1/5bd8fca47c9327bef923664d/1551234967423-XV7S3YECQQKLGY9NT0VP/_MG_6039.jpg" alt="Southampton interior detail"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Warm minimal interior"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Architectural exterior"></figure>
+      </div>
+
+      <div class="project-page-cta">
+        <a href="contact.html">Book a commission</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="socials" aria-label="Social links">
+    <a href="https://www.instagram.com/jeannieoconnorphotography/" aria-label="Instagram" target="_blank" rel="noreferrer">IG</a>
+    <a href="https://www.facebook.com/jocarchphoto" aria-label="Facebook" target="_blank" rel="noreferrer">FB</a>
+  </div>
+
+  <script>
+    const nav = document.querySelector('.site-navigation');
+    const toggle = document.querySelector('.menu-toggle');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal | JOC</title>
+  <meta name="description" content="Journal and project notes from JOC architectural photography.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/squeeze-carousel.js" defer></script>
+  <script src="js/site-chrome.js" defer></script>
+</head>
+<body class="blog-page">
+  <header class="site-header">
+    <div class="header-bar">
+      <div class="brand-block">
+        <a href="index.html" class="brand-mark">JOC</a>
+        <span>Architectural Photography</span>
+      </div>
+      <nav class="site-navigation" aria-label="Main navigation">
+        <button class="menu-toggle" type="button" aria-expanded="false">Menu</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="southampton.html">Southampton</a></li>
+          <li><a href="daniels-devlin-house.html">Daniels/Devlin House</a></li>
+          <li><a href="walnut-creek-cottage.html">Walnut Creek Cottage</a></li>
+          <li><a href="aidells-oakes-healdsburg-house.html">Aidells/Oakes Healdsburg House</a></li>
+          <li><a href="atherton-poolhouse.html">Atherton Poolhouse</a></li>
+          <li><a href="art-and-architecture.html">Art &amp; Architecture</a></li>
+          <li><a href="photography-of-artwork.html">Photography of Artwork</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero" aria-label="Journal">
+      <div class="page-hero-inner">
+        <p>Journal</p>
+        <h1>Notes</h1>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="blog-grid">
+        <article class="blog-post">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80" alt="Journal post image">
+          <div class="blog-post-body">
+            <time datetime="2025-01-16">Jan 16, 2025</time>
+            <h3>Chasing the right light in a modern retreat</h3>
+            <p>There is a quiet difference between good architecture photography and photography that feels alive. The most important ingredient is often patience.</p>
+          </div>
+        </article>
+
+        <article class="blog-post">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=80" alt="Journal post image">
+          <div class="blog-post-body">
+            <time datetime="2025-02-08">Feb 08, 2025</time>
+            <h3>Material language and shadow studies</h3>
+            <p>Stone, glass, timber, and the play of shadow all tell a story. Our process prioritizes those textures as much as the grand gesture of the full frame.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="socials" aria-label="Social links">
+    <a href="https://www.instagram.com/jeannieoconnorphotography/" aria-label="Instagram" target="_blank" rel="noreferrer">IG</a>
+    <a href="https://www.facebook.com/jocarchphoto" aria-label="Facebook" target="_blank" rel="noreferrer">FB</a>
+  </div>
+
+  <script>
+    const nav = document.querySelector('.site-navigation');
+    const toggle = document.querySelector('.menu-toggle');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+  </script>
+</body>
+</html>

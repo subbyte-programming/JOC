@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | JOC</title>
+  <meta name="description" content="Book an architecture photography session with JOC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/squeeze-carousel.js" defer></script>
+  <script src="js/site-chrome.js" defer></script>
+</head>
+<body class="contact-page">
+  <header class="site-header">
+    <div class="header-bar">
+      <div class="brand-block">
+        <a href="index.html" class="brand-mark">JOC</a>
+        <span>Architectural Photography</span>
+      </div>
+      <nav class="site-navigation" aria-label="Main navigation">
+        <button class="menu-toggle" type="button" aria-expanded="false">Menu</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="southampton.html">Southampton</a></li>
+          <li><a href="daniels-devlin-house.html">Daniels/Devlin House</a></li>
+          <li><a href="walnut-creek-cottage.html">Walnut Creek Cottage</a></li>
+          <li><a href="aidells-oakes-healdsburg-house.html">Aidells/Oakes Healdsburg House</a></li>
+          <li><a href="atherton-poolhouse.html">Atherton Poolhouse</a></li>
+          <li><a href="art-and-architecture.html">Art &amp; Architecture</a></li>
+          <li><a href="photography-of-artwork.html">Photography of Artwork</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero" aria-label="Booking JOC">
+      <div class="page-hero-inner">
+        <p>Booking</p>
+        <h1>Session</h1>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="contact-layout">
+        <div class="contact-copy">
+          <h2>Prepare the details for a thoughtful shoot.</h2>
+          <p>Every commission begins with a conversation about your project, timeline, location, and the feeling you want the final imagery to hold.</p>
+          <p>Whether you are photographing a newly completed home, a renovation, or a quiet interior study, the process is designed to feel collaborative and clear.</p>
+          <ul class="contact-list">
+            <li><strong>Rates</strong><span>Custom pricing based on scope and location</span></li>
+            <li><strong>Turnaround</strong><span>2-4 weeks for most residential projects</span></li>
+            <li><strong>Services</strong><span>Architectural, interiors, aerial, and night imagery</span></li>
+          </ul>
+        </div>
+
+        <div class="contact-card">
+          <form>
+            <div class="form-grid">
+              <div>
+                <input class="input" type="text" placeholder="Your name" aria-label="Your name">
+              </div>
+              <div>
+                <input class="input" type="email" placeholder="Your email" aria-label="Your email">
+              </div>
+              <div class="full-span">
+                <input class="input" type="text" placeholder="Project type" aria-label="Project type">
+              </div>
+              <div class="full-span">
+                <textarea class="textarea" placeholder="Tell us about your architecture project" aria-label="Project details"></textarea>
+              </div>
+              <div class="full-span">
+                <button class="btn" type="submit">Request booking</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="socials" aria-label="Social links">
+    <a href="https://www.instagram.com/jeannieoconnorphotography/" aria-label="Instagram" target="_blank" rel="noreferrer">IG</a>
+    <a href="https://www.facebook.com/jocarchphoto" aria-label="Facebook" target="_blank" rel="noreferrer">FB</a>
+  </div>
+
+  <script>
+    const nav = document.querySelector('.site-navigation');
+    const toggle = document.querySelector('.menu-toggle');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+  </script>
+</body>
+</html>

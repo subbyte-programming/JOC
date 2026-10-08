@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atherton Poolhouse | JOC</title>
+  <meta name="description" content="Atherton Poolhouse architectural photography by JOC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/squeeze-carousel.js" defer></script>
+  <script src="js/site-chrome.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-bar">
+      <div class="brand-block">
+        <a href="index.html" class="brand-mark">JOC</a>
+        <span>Architectural Photography</span>
+      </div>
+      <nav class="site-navigation" aria-label="Main navigation">
+        <button class="menu-toggle" type="button" aria-expanded="false">Menu</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="southampton.html">Southampton</a></li>
+          <li><a href="daniels-devlin-house.html">Daniels/Devlin House</a></li>
+          <li><a href="walnut-creek-cottage.html">Walnut Creek Cottage</a></li>
+          <li><a href="aidells-oakes-healdsburg-house.html">Aidells/Oakes Healdsburg House</a></li>
+          <li><a class="active" href="atherton-poolhouse.html">Atherton Poolhouse</a></li>
+          <li><a href="art-and-architecture.html">Art &amp; Architecture</a></li>
+          <li><a href="photography-of-artwork.html">Photography of Artwork</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell project-page-shell">
+    <section class="project-hero" style="background-image: linear-gradient(rgba(17,17,17,0.35), rgba(17,17,17,0.76)), url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1600&q=85');" aria-label="Atherton Poolhouse project cover">
+      <div class="page-hero-inner">
+        <p>Featured project</p>
+        <h1>Atherton Poolhouse</h1>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="project-intro">
+        <div class="project-main-image">
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Atherton Poolhouse exterior">
+        </div>
+        <div class="project-copy">
+          <p class="eyebrow dark">Architecture / Outdoor Living</p>
+          <h2>Outdoor luxury framed with softness, geometry, and stillness.</h2>
+          <p>Atherton Poolhouse was photographed with a focus on rhythm and atmospheric calm. The structure’s sculptural geometry and shaded materials are rendered with a subtle cinematic softness that makes the setting feel both refined and restful.</p>
+          <p>Rather than simply documenting the form, the work celebrates the way the house holds light, the texture of stone under evening glow, and the slow calm of California outdoor living.</p>
+        </div>
+      </div>
+
+      <div class="project-specs" aria-label="Project details">
+        <div class="project-spec"><span>Location</span><strong>Atherton</strong></div>
+        <div class="project-spec"><span>Type</span><strong>Poolhouse</strong></div>
+        <div class="project-spec"><span>Scope</span><strong>Exterior &amp; Detail</strong></div>
+        <div class="project-spec"><span>Approach</span><strong>Cinematic Light</strong></div>
+      </div>
+
+      <div class="project-gallery">
+        <figure><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Atherton poolhouse view"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Pool and terrace architecture"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Luxury outdoor living"></figure>
+      </div>
+
+      <div class="project-page-cta">
+        <a href="contact.html">Book a commission</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="socials" aria-label="Social links">
+    <a href="https://www.instagram.com/jeannieoconnorphotography/" aria-label="Instagram" target="_blank" rel="noreferrer">IG</a>
+    <a href="https://www.facebook.com/jocarchphoto" aria-label="Facebook" target="_blank" rel="noreferrer">FB</a>
+  </div>
+
+  <script>
+    const nav = document.querySelector('.site-navigation');
+    const toggle = document.querySelector('.menu-toggle');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | JOC</title>
+  <meta name="description" content="About JOC architectural photography studio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/squeeze-carousel.js" defer></script>
+  <script src="js/site-chrome.js" defer></script>
+</head>
+<body class="about-page">
+  <header class="site-header">
+    <div class="header-bar">
+      <div class="brand-block">
+        <a href="index.html" class="brand-mark">JOC</a>
+        <span>Architectural Photography</span>
+      </div>
+      <nav class="site-navigation" aria-label="Main navigation">
+        <button class="menu-toggle" type="button" aria-expanded="false">Menu</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="southampton.html">Southampton</a></li>
+          <li><a href="daniels-devlin-house.html">Daniels/Devlin House</a></li>
+          <li><a href="walnut-creek-cottage.html">Walnut Creek Cottage</a></li>
+          <li><a href="aidells-oakes-healdsburg-house.html">Aidells/Oakes Healdsburg House</a></li>
+          <li><a href="atherton-poolhouse.html">Atherton Poolhouse</a></li>
+          <li><a href="art-and-architecture.html">Art &amp; Architecture</a></li>
+          <li><a href="photography-of-artwork.html">Photography of Artwork</a></li>
+          <li><a class="active" href="about-us.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero" aria-label="About JOC">
+      <div class="page-hero-inner">
+        <p>About</p>
+        <h1>JOC</h1>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="about-layout">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1200&q=80" alt="Jeannie O'Connor with modern architecture">
+        </div>
+        <div class="about-copy">
+          <h2>Capturing architecture with atmosphere and clarity.</h2>
+          <p>Jeannie O'Connor is an architectural photographer known for creating evocative, honest images that reveal how light, texture, and material shape a space. Her work balances precision with feeling, turning modern homes and intimate interiors into stories that feel both tactile and timeless.</p>
+          <p>From California estates to homes abroad, each commission begins with close observation. The goal is not simply a record of architecture, but a natural rendering that preserves the spirit of the project, the details that make it unique, and the lived experience within it.</p>
+          <p>Her portfolio spans residential architecture, renovations, landscape integration, and art-centered interiors. With a collaborative approach and attention to atmosphere, each image is designed to reflect the intent of the architect, client, and place.</p>
+        </div>
+      </div>
+
+      <div class="stats-grid" aria-label="Statistics">
+        <div class="stat-box"><strong>Residential</strong><span>New &amp; remodeled homes</span></div>
+        <div class="stat-box"><strong>California</strong><span>Client commissions</span></div>
+        <div class="stat-box"><strong>Worldwide</strong><span>Personal portfolio</span></div>
+        <div class="stat-box"><strong>Night + aerial</strong><span>Still &amp; moving image</span></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="socials" aria-label="Social links">
+    <a href="https://www.instagram.com/jeannieoconnorphotography/" aria-label="Instagram" target="_blank" rel="noreferrer">IG</a>
+    <a href="https://www.facebook.com/jocarchphoto" aria-label="Facebook" target="_blank" rel="noreferrer">FB</a>
+  </div>
+
+  <script>
+    const nav = document.querySelector('.site-navigation');
+    const toggle = document.querySelector('.menu-toggle');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+  </script>
+</body>
+</html>

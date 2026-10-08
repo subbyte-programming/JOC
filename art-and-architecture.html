@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art & Architecture | JOC</title>
+  <meta name="description" content="Art & Architecture project photography by JOC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/squeeze-carousel.js" defer></script>
+  <script src="js/site-chrome.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-bar">
+      <div class="brand-block">
+        <a href="index.html" class="brand-mark">JOC</a>
+        <span>Architectural Photography</span>
+      </div>
+      <nav class="site-navigation" aria-label="Main navigation">
+        <button class="menu-toggle" type="button" aria-expanded="false">Menu</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="southampton.html">Southampton</a></li>
+          <li><a href="daniels-devlin-house.html">Daniels/Devlin House</a></li>
+          <li><a href="walnut-creek-cottage.html">Walnut Creek Cottage</a></li>
+          <li><a href="aidells-oakes-healdsburg-house.html">Aidells/Oakes Healdsburg House</a></li>
+          <li><a href="atherton-poolhouse.html">Atherton Poolhouse</a></li>
+          <li><a class="active" href="art-and-architecture.html">Art &amp; Architecture</a></li>
+          <li><a href="photography-of-artwork.html">Photography of Artwork</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell project-page-shell">
+    <section class="project-hero" style="background-image: linear-gradient(rgba(17,17,17,0.35), rgba(17,17,17,0.76)), url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1600&q=85');" aria-label="Art and Architecture project cover">
+      <div class="page-hero-inner">
+        <p>Featured project</p>
+        <h1>Art &amp; Architecture</h1>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="project-intro">
+        <div class="project-main-image">
+          <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Art and architecture portfolio image">
+        </div>
+        <div class="project-copy">
+          <p class="eyebrow dark">Architecture / Art Direction</p>
+          <h2>Where form, light, and material conversation become a visual story.</h2>
+          <p>Art &amp; Architecture explores the crossover between built form and curated interiors, where each object and surface contributes to a broader narrative. The visual language is grounded in quiet contrast, volume, and a confidence in negative space.</p>
+          <p>Each scene is arranged to celebrate both structure and detail without over-scaling the frame. The result is a refined, editorial set that speaks to the authority of architecture and the softness of lived-in interiors.</p>
+        </div>
+      </div>
+
+      <div class="project-specs" aria-label="Project details">
+        <div class="project-spec"><span>Location</span><strong>California</strong></div>
+        <div class="project-spec"><span>Type</span><strong>Editorial Architecture</strong></div>
+        <div class="project-spec"><span>Scope</span><strong>Still + Detail</strong></div>
+        <div class="project-spec"><span>Approach</span><strong>Conceptual Storytelling</strong></div>
+      </div>
+
+      <div class="project-gallery">
+        <figure><img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Art and architecture detail"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=80" alt="Gallery wall interior"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Architecture and art environment"></figure>
+      </div>
+
+      <div class="project-page-cta">
+        <a href="contact.html">Book a commission</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="socials" aria-label="Social links">
+    <a href="https://www.instagram.com/jeannieoconnorphotography/" aria-label="Instagram" target="_blank" rel="noreferrer">IG</a>
+    <a href="https://www.facebook.com/jocarchphoto" aria-label="Facebook" target="_blank" rel="noreferrer">FB</a>
+  </div>
+
+  <script>
+    const nav = document.querySelector('.site-navigation');
+    const toggle = document.querySelector('.menu-toggle');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+  </script>
+</body>
+</html>
