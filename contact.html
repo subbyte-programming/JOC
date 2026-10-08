@@ -46,11 +46,11 @@
     </section>
 
     <section class="page-content">
-      <div class="contact-layout">
+      <div class="contact-layout" id="request-appointment">
         <div class="contact-copy">
-          <h2>Let’s talk about your project.</h2>
-          <p>For residential architecture, editorial commissions, or travel-based assignment work, reach out to discuss location, scope, timeline, and photography needs.</p>
-          <p>Whether you need still photography, night imagery, or aerial coverage, the team is ready to help shape a clear plan.</p>
+          <h2>Let’s plan something beautiful.</h2>
+          <p>Request an appointment to talk through your architecture project, preferred timing, and photography needs. We’ll follow up by email to find a time that works.</p>
+          <p>From still photography and night imagery to aerial coverage, every commission starts with a thoughtful conversation.</p>
           <ul class="contact-list">
             <li><strong>Email</strong><span>hello@jocarchitecturalphotography.com</span></li>
             <li><strong>Instagram</strong><span>@jeannieoconnorphotography</span></li>
@@ -59,22 +59,27 @@
         </div>
 
         <div class="contact-card">
-          <form>
+          <form id="appointment-request-form">
             <div class="form-grid">
               <div>
-                <input class="input" type="text" placeholder="Your name" aria-label="Your name">
+                <input class="input" type="text" name="name" placeholder="Your name" aria-label="Your name" autocomplete="name" required>
               </div>
               <div>
-                <input class="input" type="email" placeholder="Your email" aria-label="Your email">
+                <input class="input" type="email" name="email" placeholder="Your email" aria-label="Your email" autocomplete="email" required>
               </div>
               <div class="full-span">
-                <input class="input" type="text" placeholder="Project type" aria-label="Project type">
+                <input class="input" type="text" name="project-type" placeholder="Project type (e.g. residential, editorial)" aria-label="Project type" required>
               </div>
               <div class="full-span">
-                <textarea class="textarea" placeholder="Tell us about your architecture project" aria-label="Project details"></textarea>
+                <label class="appointment-date-label" for="appointment-date">Preferred appointment date <span>(optional)</span></label>
+                <input class="input" id="appointment-date" type="date" name="appointment-date" aria-label="Preferred appointment date">
               </div>
               <div class="full-span">
-                <button class="btn" type="submit">Send inquiry</button>
+                <textarea class="textarea" name="project-details" placeholder="Tell us a little about your project and the best time to reach you" aria-label="Project details" required></textarea>
+              </div>
+              <div class="full-span">
+                <button class="btn appointment-submit" type="submit">Request a time <span aria-hidden="true">↗</span></button>
+                <p class="appointment-form-note">This opens your email app with your request ready to send.</p>
               </div>
             </div>
           </form>

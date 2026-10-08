@@ -2427,6 +2427,88 @@ main,
   background: #f4e9dc;
 }
 
+.appointment-cta {
+  position: fixed;
+  z-index: 40;
+  right: clamp(16px, 3vw, 34px);
+  bottom: clamp(16px, 3vw, 30px);
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 14px 13px 20px;
+  border: 1px solid rgba(255, 250, 244, 0.58);
+  border-radius: 999px;
+  color: #263329;
+  background: #f4e9dc;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.24);
+  font-size: 0.67rem;
+  font-weight: 600;
+  letter-spacing: 0.055em;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.appointment-cta:hover,
+.appointment-cta:focus-visible {
+  transform: translateY(-3px);
+  background: #fffaf4;
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.3);
+}
+
+.appointment-cta:focus-visible {
+  outline: 2px solid #d4b077;
+  outline-offset: 4px;
+}
+
+.appointment-cta__arrow {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: 50%;
+  color: #fffaf4;
+  background: #536557;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+}
+
+.appointment-cta:hover .appointment-cta__arrow,
+.appointment-cta:focus-visible .appointment-cta__arrow { transform: rotate(45deg); }
+
+.appointment-date-label {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.72rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.appointment-date-label span {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.9em;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.appointment-submit {
+  gap: 12px;
+  border-color: rgba(212, 176, 119, 0.65);
+  background: #536557;
+  color: #fffaf4;
+}
+
+.appointment-submit:hover,
+.appointment-submit:focus-visible {
+  border-color: #f4e9dc;
+  background: #657967;
+}
+
+.appointment-form-note {
+  margin: 12px 0 0;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.72rem;
+}
+
 @media (max-width: 900px) {
   .site-footer__top {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2505,6 +2587,19 @@ main,
 
   .site-footer__socials { order: 3; }
   .site-footer__back-to-top { margin-left: auto; }
+
+  .appointment-cta {
+    right: 14px;
+    bottom: 14px;
+    gap: 10px;
+    padding: 10px 11px 10px 15px;
+    font-size: 0.62rem;
+  }
+
+  .appointment-cta__arrow {
+    width: 27px;
+    height: 27px;
+  }
 }
 
 @media (max-width: 380px) {

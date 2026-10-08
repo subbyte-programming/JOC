@@ -1,6 +1,37 @@
 (() => {
   const main = document.querySelector("main");
-  if (!main || document.querySelector(".site-footer")) return;
+  if (!main) return;
+
+  if (!document.querySelector(".appointment-cta")) {
+    const appointmentCta = document.createElement("a");
+    appointmentCta.className = "appointment-cta";
+    appointmentCta.href = "contact.html#request-appointment";
+    appointmentCta.innerHTML = `
+      <span>Request a time</span>
+      <span class="appointment-cta__arrow" aria-hidden="true">↗</span>
+    `;
+    document.body.append(appointmentCta);
+  }
+
+  const appointmentForm = document.querySelector("#appointment-request-form");
+  appointmentForm?.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(appointmentForm);
+    const message = [
+      `Name: ${formData.get("name")}`,
+      `Email: ${formData.get("email")}`,
+      `Project type: ${formData.get("project-type")}`,
+      `Preferred appointment date: ${formData.get("appointment-date") || "Flexible"}`,
+      "",
+      "Project details:",
+      formData.get("project-details")
+    ].join("\n");
+    const subject = encodeURIComponent("Appointment request — JOC Architectural Photography");
+    window.location.href = `mailto:hello@jocarchitecturalphotography.com?subject=${subject}&body=${encodeURIComponent(message)}`;
+  });
+
+  if (document.querySelector(".site-footer")) return;
 
   const footer = document.createElement("footer");
   footer.className = "site-footer";
@@ -31,7 +62,7 @@
         <div class="site-footer__contact">
           <p class="site-footer__label">Have a project in mind?</p>
           <p>Let’s make thoughtful images of the spaces that matter.</p>
-          <a class="site-footer__cta" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a>
+          <a class="site-footer__cta" href="contact.html#request-appointment">Request a time <span aria-hidden="true">↗</span></a>
           <a class="site-footer__email" href="mailto:hello@jocarchitecturalphotography.com">hello@jocarchitecturalphotography.com</a>
         </div>
       </div>
